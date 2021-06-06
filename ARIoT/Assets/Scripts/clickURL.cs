@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -7,22 +8,25 @@ using UnityEngine.Networking;
 public class clickURL : MonoBehaviour
 {
     public string url;
+    public GameObject textbox;
+    public UnityEngine.Networking.CertificateHandler certificateHandler = null;
     public void open()
     {
         StartCoroutine(GetRequest(url));
-        //Debug.Log("IP is " + url);
-
     }
 
     IEnumerator GetRequest(string uri)
     {
-        //Debug.Log("uri is " + uri);
-        using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
+        UnityWebRequest webRequest = UnityWebRequest.Get(uri);
+        yield return webRequest.SendWebRequest();
+        if (webRequest.error != null)
         {
-            // Request and wait for the desired page.
-             
-            yield return webRequest.SendWebRequest();
-            
+            Debug.Log(webRequest.error);
+            textbox.GetComponent<UnityEngine.UI.Text>().text = ("false");
+        }
+        else
+        {
+            textbox.GetComponent<UnityEngine.UI.Text>().text = ("true");
         }
     }
 }
