@@ -66,7 +66,6 @@
     <Compile Include="Assets\Scripts\RecieveMessages.cs" />
     <Compile Include="Assets\Scripts\SendMessages.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
-    <None Include="Assets\StreamingAssets\Vuforia\ARIoT.xml" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
     <None Include="Assets\Vuforia\Shaders\VuforiaVB_YUVNV12_YUVNV21.cginc" />
@@ -80,6 +79,7 @@
     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
     <None Include="Assets\Vuforia\Shaders\DepthContour.shader" />
     <None Include="Assets\Vuforia\Shaders\VuforiaVB_RGB.cginc" />
+    <None Include="Assets\StreamingAssets\Vuforia\ARIoT.xml" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>C:/Users/chand/Documents/GitHub/Home-Automation-Using-AR-and-IoT/ARIoT/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>

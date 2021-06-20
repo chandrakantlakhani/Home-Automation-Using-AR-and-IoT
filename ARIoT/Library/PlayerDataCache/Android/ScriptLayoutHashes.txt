@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/ARIoT_Builds/AR_IoT_without_Plugin_manifest.apk
+D:/ARIoT_Builds/AR_IoT_Final.apk
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?
